@@ -1,17 +1,2 @@
 #!/bin/bash
-
-# Define the strings
-string1=""
-string2="b"
-
-# Get the lengths of the strings using expr
-length1=$(expr length "$string1")
-length2=$(expr length "$string2")
-
-# Compare the lengths and print the result
-if [ "$length1" -eq "$length2" ]; then
-  echo "Lengths match: $length1 characters"
-else
-  echo "Lengths do not match"
-fi
-
+echo $(printf %o $(($((5#$ (echo $WATER | tr 'water' '01234'))) + $((5#$ (echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'bestchol')
